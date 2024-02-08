@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 15px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-50px) scale(4.5);
+}
+
+.foreground{
+    transform: translateZ(-18px) scale(2.5);
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1{
+    position: absolute;
+    top: 3rem;
+    font-size: 8rem;
+    letter-spacing: 4px;
+    color:floralwhite;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.7rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateX(-50%);
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1{
+    background-image: url(AL_Forestry_England_LOW-RES_91022113.jpeg);
+}
+
+.bg2{
+    background-image: url(main-img-6.jpg);
+}
+
+.bg3{
+    background-image: url(shutterstock_1826462279.jpg);
+}
